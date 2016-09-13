@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.chenyu.monster.hotimage.BodyClickView
+            android:id="@+id/bv_human_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_other_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/normal_width_10"
+                android:layout_marginTop="@dimen/normal_width_10"
+                android:text="@string/body_part_others"
+                android:textColor="@color/tint_color"
+                android:textSize="@dimen/text_size_normal_6" />
+
+            <TextView
+                android:id="@+id/tv_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/normal_width_60"
+                android:layout_marginLeft="@dimen/normal_width_15"
+                android:layout_marginStart="@dimen/normal_width_15"
+                android:layout_marginTop="@dimen/normal_width_10"
+                android:background="@drawable/body_part_sex_bg"
+                android:padding="@dimen/normal_width_10"
+                android:text="@string/body_part_child"
+                android:textColor="@drawable/body_part_sex_color"
+                android:textSize="@dimen/text_size_normal_6" />
+
+            <TextView
+                android:id="@+id/tv_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_child"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/normal_width_15"
+                android:layout_marginStart="@dimen/normal_width_15"
+                android:layout_marginTop="@dimen/normal_width_10"
+                android:background="@drawable/body_part_sex_bg"
+                android:padding="@dimen/normal_width_10"
+                android:text="@string/body_part_female"
+                android:textColor="@drawable/body_part_sex_color"
+                android:textSize="@dimen/text_size_normal_6" />
+
+            <TextView
+                android:id="@+id/tv_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_female"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/normal_width_15"
+                android:layout_marginStart="@dimen/normal_width_15"
+                android:layout_marginTop="@dimen/normal_width_10"
+                android:background="@drawable/body_part_sex_bg"
+                android:padding="@dimen/normal_width_10"
+                android:text="@string/body_part_male"
+                android:textColor="@drawable/body_part_sex_color"
+                android:textSize="@dimen/text_size_normal_6" />
+
+            <ToggleButton
+                android:id="@+id/st_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/normal_width_60"
+                android:layout_marginRight="@dimen/normal_width_20"
+                android:background="@drawable/body_part_switch"
+                android:checked="true"
+                android:textColor="@color/white"
+                android:textOff=""
+                android:textOn="" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

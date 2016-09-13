@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HotImage</string>
+
+    <string name="body_part_others">其他全身症状</string>
+    <string name="body_part_male">男性</string>
+    <string name="body_part_female">女性</string>
+    <string name="body_part_child">儿童</string>
+</resources>
